@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*
+header {
+  display: flex;
+  align-items: center;
+  background-color: palegoldenrod;
+  padding-inline: 2rem;
+}
+
+main {
+  background-color: aquamarine;
+  height: calc(100vh - 52.9px);
+  display: flex;
+}
+
+/* ul {
+            display: flex;
+        } */
+/*        
+.logo-image {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.logo {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+aside {
+  background-color: coral;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  background-color: palevioletred;
+  flex-grow: 1;
+}
+
+aside button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding-block: 0.75rem;
+  margin-top: auto;
+}
+*/
+nav {
+  background-color: #fef7e2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+nav button {
+  background-color: #ffdf7f;
+  border-radius: 20px;
+  flex: 1 1 50px;
+}
+nav button#btnBg {
+  flex: 2 1;
+}
+span img {
+  width: 10%;
+}
+.card_wrap {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 50%;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  border-radius: 10%;
+  gap: 10px;
+  background-color: #fef7e2;
+  flex-basis: 60%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-items: center;
+}
+
+.card img {
+  display: flex;
+  width: 50%;
+}
+h1 {
+  color: #752305;
+}
+h4 {
+  display: flex;
+  color: #752305;
+}
+a {
+  display: flex;
+  color: #752305;
+}
+li {
+  display: flex;
+  color: #752305;
+}
