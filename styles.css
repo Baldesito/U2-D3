@@ -2,12 +2,13 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 /*
 header {
   display: flex;
@@ -59,65 +60,155 @@ aside button {
   background-color: black;
   color: white;
   border: none;
-  padding-block: 0.75rem;
+  
   margin-top: auto;
 }
 */
-nav {
+/* bar de nav sinistra contenitore bottoni*/
+.navBar {
+  display: grid;
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+  padding-bottom: 100%;
   background-color: #fef7e2;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
 }
+/* buttoni a sinistra*/
 nav button {
+  height: 10vh;
+  width: 80%;
+  border: hidden;
+  text-align: center;
+  color: #752305;
+  font-weight: bold;
+  margin: 10px auto;
   background-color: #ffdf7f;
-  border-radius: 20px;
+  border-radius: 60px;
   flex: 1 1 50px;
 }
-nav button#btnBg {
-  flex: 2 1;
-}
-span img {
-  width: 10%;
-}
-.card_wrap {
-  list-style: none;
+/* buttone grande */
+#btng {
+  padding-right: 20px;
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  width: 50%;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 11vh;
 }
 
-.card {
+/* logoshop */
+
+img#logoshop {
+  margin-left: 20px;
   display: flex;
+  width: 50%;
+}
+
+/* card reduis */
+.card_wrap {
+  border-radius: 10px;
+  list-style: none;
+  display: flex;
+  width: 20%;
+  gap: 20px;
+  width: 75%;
+  height: auto;
+}
+/* la carte */
+.card {
+  padding: 15px;
   border-radius: 10%;
   gap: 10px;
   background-color: #fef7e2;
-  flex-basis: 60%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  width: 15vh;
 }
 
+/* card imagine */
 .card img {
+  object-fit: cover;
+  max-width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.container article {
   display: flex;
-  width: 50%;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 h1 {
+  margin-bottom: 24px;
+  font-size: 40px;
+  margin: 10px;
+  font-weight: bold;
+  color: #752305;
+}
+h2 {
+  margin-bottom: 24px;
+  font-size: 40px;
+  margin: 10px;
+  font-weight: bold;
+  color: #752305;
+}
+h3 {
+  margin: 20px 0 20px 0;
+  font-size: 20px;
+  display: flex;
+  font-weight: bold;
   color: #752305;
 }
 h4 {
   display: flex;
+  font-weight: bold;
   color: #752305;
 }
+/* bio */
 a {
   display: flex;
   color: #752305;
+  background-color: #fef7e2;
 }
+/* prezzo kg */
 li {
+  padding: 2px;
+  margin-top: 2px;
   display: flex;
   color: #752305;
+  background-color: #fef7e2;
+}
+/* add carello */
+.add button {
+  color: #742305;
+  width: 100%;
+  border-radius: 60px;
+  border: none;
+  background-color: #ffdf7e;
+  font-weight: bold;
+  height: 100%;
+}
+p {
+  display: flex;
+  text-align: center;
+}
+section img {
+  margin: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+section.fine {
+  border-radius: 20px;
+  flex-wrap: wrap;
+  width: 77%;
+  float: right;
+  background-color: #fef7e2;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
 }
